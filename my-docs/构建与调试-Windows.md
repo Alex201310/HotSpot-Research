@@ -41,7 +41,7 @@ create D:\JavaSE1.7 <br>
 按Ctrl + Shift + O，打开D:\hotspot\build\vs-i486\jvm.vcxproj，
 然后右击左边的jvm项目名，选择Build就可以构建jvm了。
 
-## 调式JVM
+## 调试JVM
 
 在Visual Studio 2010中打开jvm\share\vm\runtime\thread.cpp文件，
 在create_vm方法中(3269行)打个断点，然后按F5就可以了。
