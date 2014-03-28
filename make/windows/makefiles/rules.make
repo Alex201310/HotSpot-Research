@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
 #
 # This code is free software; you can redistribute it and/or modify it
@@ -65,6 +65,13 @@ VcVersion=VC8
 VcVersion=VC9
 
 !elseif "$(MSC_VER)" == "1600"
+
+VcVersion=VC10
+ProjectFile=jvm.vcxproj
+
+!elseif "$(MSC_VER)" == "1700"
+# This is VS2012, but it loads VS10 projects just fine (and will
+# upgrade them automatically to VS2012 format).
 
 VcVersion=VC10
 ProjectFile=jvm.vcxproj
